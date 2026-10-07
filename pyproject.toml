@@ -1,0 +1,29 @@
+[project]
+name = "proyecto-analisis-red-social-ficticia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "amaiaDi", email = "amaia.di@icjardin.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "pandas",
+    "openpyxl",
+    "pyarrow",
+    "fastparquet",
+    "plotly",
+    "kaleido",
+    "faker",
+    "pytest",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "nbdime>=4.0.4",
+    "nbstripout>=0.9.1",
+]
